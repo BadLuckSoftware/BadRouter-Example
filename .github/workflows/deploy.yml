@@ -25,3 +25,14 @@ jobs:
         target: "/apps/badrouter"
         rm: true
         strip_components: 1
+    - name: Run Package Manager
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.KEY }}
+        script: |
+          cd /apps/badrouter
+          composer install
+      continue-on-error: true

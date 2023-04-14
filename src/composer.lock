@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55201ade48d0e3143fe61d3af0f92851",
+    "content-hash": "25060d89d2f2f5b7d44b443a26195673",
     "packages": [
         {
             "name": "badluck/badrouter",
