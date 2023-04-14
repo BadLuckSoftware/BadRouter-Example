@@ -17,8 +17,19 @@
 <div class="feature-list">
   <div class="feature">
     <h1>Example</h1>
+    <p>
+      This main example shows:
+      <ul>
+        <li>How to setup routes</li>
+        <li>How to render views</li>
+        <li>How to customize your webapp's directories</li>
+        <li>Start the router</li>
+      </ul>
+    </p>
     <pre>
   <code id="code_example" class="language-php">&lt;?php
+require_once('vendor/autoload.php');
+
 use BadRouter\Router;
 
 // Setup views
@@ -60,7 +71,7 @@ Router::run();</code>
   <div class="feature" style="max-width: 32em;">
     <h1>Static Files</h1>
     <p>
-      Static files in .../public/... can be accessed.<br>
+      Static files in <code>.../public/...</code> can be accessed.<br>
       The "PUBLIC_PATH" is a global variable defined when Router::run() is called.
     </p>
     <pre>
@@ -72,7 +83,8 @@ Router::run();</code>
   <div class="feature">
     <h1>Middleware</h1>
     <p>
-      Middleware functions can be chained together to handle logic before a route is rendered.
+      Middleware functions can be chained<br>
+      together to handle logic before a route is rendered.
     </p>
     <pre>
 <code class="language-php">&lt;?php
@@ -104,6 +116,10 @@ Router::use(function($request) {
 
   <div class="feature">
     <h1>Accessing Variables from Views</h1>
+    <p>
+      You can set "local" view variables from a<br>
+      route and use them inside a view.
+    </p>
     <pre>
 <code class="language-php">Router::get('/home', function() {
   $locals = [
@@ -113,6 +129,7 @@ Router::use(function($request) {
   Router::render('/home', $locals);
 });</code>
     </pre>
+    <p>So that you can...</p>
     <pre><code class="language-html">&lt;p&gt;&dollar;message = "&lt;?&equals; &dollar;message ?&gt;"&lt;/p&gt;</code></pre>
     <p>$message = "<?= $message ?>"</p>
   </div>

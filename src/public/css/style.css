@@ -36,6 +36,11 @@ a, a:visited {
   color: #949af5;
 }
 
+code {
+  background-color: #4b4a42;
+  font-size: larger;
+}
+
 pre code {
   max-width: fit-content;
   font-size: larger;
