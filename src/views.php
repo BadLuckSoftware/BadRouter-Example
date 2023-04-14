@@ -10,10 +10,6 @@ Router::set_error(404, function() {
 });
 
 Router::get('/', function() {
-  Router::redirect('/home');
-});
-
-Router::get('/home', function() {
   $locals = [
     'message' => 'Hello world!'
   ];

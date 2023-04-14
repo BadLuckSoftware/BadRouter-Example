@@ -57,56 +57,7 @@ Router::run();</code>
     </pre>
   </div>
 
-  <div class="feature">
-    <h1>API</h1>
-    <p>Create APIs that return JSON.</p>
-    <pre>
-<code class="language-php">&lt;?php
-
-use BadRouter\Router;
-
-// Login using a password
-Router::post('/api/login', function() {
-  $result = false;
-
-  if($_POST['password'] == 'rosebud') {
-    $result = true;
-    $_SESSION['is_admin'] = true;
-  }
-
-  Router::json([
-    'success' => $result,
-  ]);
-});
-
-// Logout
-Router::post('/api/logout', function() {
-  session_destroy();
-  Router::json([
-    'success' => true
-  ]);
-});</code>
-    </pre>
-  </div>
-
-  <div class="feature">
-    <h1>Accessing Variables from Views</h1>
-    <pre>
-<code class="language-php">Router::get('/home', function() {
-  $locals = [
-    'message' => 'Hello world!'
-  ];
-
-  Router::render('/home', $locals);
-});</code>
-    </pre>
-    <pre>
-<code class="language-html">&lt;p&gt;&dollar;message = "&lt;?&equals; &dollar;message ?&gt;"&lt;/p&gt;</code>
-  </pre>
-  <p>$message = "<?= $message ?>"</p>
-</div>
-
-  <div class="feature">
+  <div class="feature" style="max-width: 32em;">
     <h1>Static Files</h1>
     <p>
       Static files in .../public/... can be accessed.<br>
@@ -147,6 +98,53 @@ Router::use(function($request) {
 // Log routes
 Router::use(function($request) {
   Logger::log($request);
+});</code>
+    </pre>
+  </div>
+
+  <div class="feature">
+    <h1>Accessing Variables from Views</h1>
+    <pre>
+<code class="language-php">Router::get('/home', function() {
+  $locals = [
+    'message' => 'Hello world!'
+  ];
+
+  Router::render('/home', $locals);
+});</code>
+    </pre>
+    <pre><code class="language-html">&lt;p&gt;&dollar;message = "&lt;?&equals; &dollar;message ?&gt;"&lt;/p&gt;</code></pre>
+    <p>$message = "<?= $message ?>"</p>
+  </div>
+
+  <div class="feature">
+    <h1>API</h1>
+    <p>Create APIs that return JSON.</p>
+    <pre>
+<code class="language-php">&lt;?php
+
+use BadRouter\Router;
+
+// Login using a password
+Router::post('/api/login', function() {
+  $result = false;
+
+  if($_POST['password'] == 'rosebud') {
+    $result = true;
+    $_SESSION['is_admin'] = true;
+  }
+
+  Router::json([
+    'success' => $result,
+  ]);
+});
+
+// Logout
+Router::post('/api/logout', function() {
+  session_destroy();
+  Router::json([
+    'success' => true
+  ]);
 });</code>
     </pre>
   </div>
