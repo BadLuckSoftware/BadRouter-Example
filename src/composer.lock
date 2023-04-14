@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "55201ade48d0e3143fe61d3af0f92851",
+    "packages": [
+        {
+            "name": "badluck/badrouter",
+            "version": "v0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BadLuckSoftware/BadRouter.git",
+                "reference": "91eca028ddbca6bcebb2a95740bf0e0f852cbcf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BadLuckSoftware/BadRouter/zipball/91eca028ddbca6bcebb2a95740bf0e0f852cbcf1",
+                "reference": "91eca028ddbca6bcebb2a95740bf0e0f852cbcf1",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BadRouter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Auios",
+                    "email": "auios@badluck.io"
+                }
+            ],
+            "description": "A simple Sinatra inspired router class for PHP",
+            "keywords": [
+                "auios",
+                "badluck",
+                "middleware",
+                "router",
+                "routing",
+                "sinatra",
+                "website"
+            ],
+            "support": {
+                "issues": "https://github.com/BadLuckSoftware/BadRouter/issues",
+                "source": "https://github.com/BadLuckSoftware/BadRouter/tree/v0.2.4"
+            },
+            "time": "2023-04-14T06:44:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
