@@ -35,10 +35,10 @@
 
     console.log(JSON.stringify(fields));
 
-    $.post('<?= BASE_PATH ?>/api/login', fields, function(data) {
+    $.post('/api/login', fields, function(data) {
       if (data.success) {
         // Pass
-        window.location.href = '<?= BASE_PATH ?>/admin';
+        window.location.href = '/admin';
       } else {
         // Fail
         password.val('');

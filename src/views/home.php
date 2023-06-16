@@ -74,7 +74,7 @@ Router::run();</code>
       Static files in the <code>public</code> directory can be accessed when the uri is a file and not a route.<br>
     </p>
     <pre>
-<code class="language-html">&lt;img src="&lt;?= PUBLIC_PATH ?&gt;/images/dog.jpg" alt="dog"/&gt;</code>
+<code class="language-html">&lt;img src="/images/dog.jpg" alt="dog"/&gt;</code>
     </pre>
     <img src="/images/dog.jpg" alt="dog"/>
   </div>
