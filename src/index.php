@@ -8,8 +8,8 @@ use BadRouter\Router;
 
 // Configure directories
 Router::set_base_path('/');
-Router::set_public('/public');
-Router::set_views(__DIR__ . '/views');
+Router::set_public('public');
+Router::set_views('views');
 
 // Run
 session_start();

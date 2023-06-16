@@ -59,8 +59,8 @@ Router::set_error(404, function() {
 
 // Configure directories
 Router::set_base_path('/example');
-Router::set_public('/public');
-Router::set_views(__DIR__ . '/views');
+Router::set_public('public');
+Router::set_views('views');
 
 // Run
 session_start();
@@ -71,13 +71,12 @@ Router::run();</code>
   <div class="feature" style="max-width: 32em;">
     <h1>Static Files</h1>
     <p>
-      Static files in <code>.../public/...</code> can be accessed.<br>
-      The "PUBLIC_PATH" is a global variable defined when Router::run() is called.
+      Static files in the <code>public</code> directory can be accessed when the uri is a file and not a route.<br>
     </p>
     <pre>
 <code class="language-html">&lt;img src="&lt;?= PUBLIC_PATH ?&gt;/images/dog.jpg" alt="dog"/&gt;</code>
     </pre>
-    <img src="<?= PUBLIC_PATH ?>/images/dog.jpg" alt="dog"/>
+    <img src="/images/dog.jpg" alt="dog"/>
   </div>
 
   <div class="feature">

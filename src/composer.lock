@@ -8,17 +8,20 @@
     "packages": [
         {
             "name": "badluck/badrouter",
-            "version": "v0.2.4",
+            "version": "v0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BadLuckSoftware/BadRouter.git",
-                "reference": "91eca028ddbca6bcebb2a95740bf0e0f852cbcf1"
+                "reference": "062ee4034ce19ea31fa45b554d505d5ee97a277b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BadLuckSoftware/BadRouter/zipball/91eca028ddbca6bcebb2a95740bf0e0f852cbcf1",
-                "reference": "91eca028ddbca6bcebb2a95740bf0e0f852cbcf1",
+                "url": "https://api.github.com/repos/BadLuckSoftware/BadRouter/zipball/062ee4034ce19ea31fa45b554d505d5ee97a277b",
+                "reference": "062ee4034ce19ea31fa45b554d505d5ee97a277b",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.33"
             },
             "type": "library",
             "autoload": {
@@ -48,9 +51,9 @@
             ],
             "support": {
                 "issues": "https://github.com/BadLuckSoftware/BadRouter/issues",
-                "source": "https://github.com/BadLuckSoftware/BadRouter/tree/v0.2.4"
+                "source": "https://github.com/BadLuckSoftware/BadRouter/tree/v0.4.4"
             },
-            "time": "2023-04-14T06:44:11+00:00"
+            "time": "2023-05-03T18:45:48+00:00"
         }
     ],
     "packages-dev": [],
